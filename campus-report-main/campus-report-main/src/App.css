@@ -1,0 +1,91 @@
+body {
+  font-family: "Pretendard", sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* 공통 컨테이너 */
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* 입력창 */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus {
+  border-color: #1976d2;
+}
+
+/* 버튼 */
+.btn {
+  width: 100%;
+  padding: 10px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #145ca1;
+}
+
+.btn-sub {
+  background: #999;
+}
+
+.btn-sub:hover {
+  background: #777;
+}
+
+/* 관리자 카드 */
+.admin-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.status.approved {
+  color: green;
+}
+
+.status.rejected {
+  color: red;
+}
+
+/* === ✅ 여기에 추가하세요 (맨 아래 부분) === */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
